@@ -1,0 +1,122 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<title>User Interface</title>
+	<meta name="author" content="Brandt Lareau">
+	<!-- Date: 2012-12-15 -->
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+	<style type="text/css">
+	body {
+		padding-top: 60px;
+		padding-bottom: 40px;
+	}
+	</style>
+</head>
+<body>
+	<div class="navbar navbar-inverse navbar-fixed-top">
+		<div class="navbar-inner">
+			<div class="container">
+				<a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</a>
+				<a class="brand" href="#">Alpha Project</a>
+				<div class="nav-collapse collapse">
+					<ul class="nav">
+						<li class="dropdown">
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown">Inventory <b class="caret"></b></a>
+							<ul class="dropdown-menu">
+								<li class="nav-header">Management</li>
+								<li><a href="#"> <i class="icon-ok"></i> Check-in</a></li>
+								<li class="active"><a href="#"> <i class="icon-remove"></i> Check-out</a></li>
+								<li class="divider"></li>
+								<li><a href="#"> <i class="icon-plus"></i> Add</a></li>
+								<li><a href="#"> <i class="icon-minus"></i>Damaged</a></li>
+							</ul>
+						</li>
+						<li><a href="#about">Buildings</a></li>
+						<li><a href="#contact">Employees</a></li>
+	
+					</ul>
+					<form class="navbar-form pull-right">
+						<input class="span2" type="text" placeholder="Employee ID">
+						<input class="span2" type="password" placeholder="Password">
+						<button type="submit" class="btn">Sign in</button>
+					</form>
+				</div><!--/.nav-collapse -->
+			</div>
+		</div>
+	</div>
+
+	<div class="container">
+		<div class="row">
+			<div class="span4">
+				<h1>Checkout Equipment</h1>
+				<p>This is a example of the checkout system that we are going to use. In the result that we want a user to checkout a bit of equipment we want them to provide not only a serial number of the equipment but the employee id number.
+			</div>
+			<div class="span8">
+				
+				<form class="form-horizontal">
+					<div class="control-group">
+						<input type="text" placeholder="Equipment Serial #">
+					</div>
+					<div class="control-group">
+						<input type="text" placeholder="Employee ID">
+					</div>
+					<button type="submit" class="btn">Create</button>
+				</form>
+			</div>
+		</div>
+
+
+		<!-- Example row of columns -->
+		<div class="row">
+			<div class="span12">
+				<h2>Equipment List</h2>
+				<table class="table table-striped">
+					<thead>
+						<tr>
+							<th>Equipment ID</th>
+							<th>Location</th>
+							<th>Actions</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>8139923842</td>
+							<td>Bin or Aisle #</td>
+							<td><a href="">Select</a></td>
+						</tr>
+						<tr>
+							<td>8139923842</td>
+							<td>Bin or Aisle #</td>
+							<td><a href="">Select</a></td>
+						</tr>
+						<tr>
+							<td>8139923842</td>
+							<td>Bin or Aisle #</td>
+							<td><a href="">Select</a></td>
+						</tr>
+						<tr>
+							<td>8139923842</td>
+							<td>Bin or Aisle #</td>
+							<td><a href="">Select</a></td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+		</div>
+
+		<hr>
+
+		<footer>
+			<p>Imagination© Company 2012</p>
+		</footer>
+
+	</div>
+	<script src="js/jquery-1.8.3.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+</body>
+</html>
